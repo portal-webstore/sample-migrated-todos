@@ -41,10 +41,10 @@ class TodoEntity extends Equatable {
 
   static TodoEntity fromSnapshot(DocumentSnapshot snap) {
     return TodoEntity(
-      snap.data()['task'],
+      snap.get('task'),
       snap.id,
-      snap.data()['note'],
-      snap.data()['complete'],
+      snap.get('note'),
+      snap.get('complete'),
     );
   }
 
