@@ -43,6 +43,7 @@
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 
 <!-- Firebase Configuration -->
@@ -59,6 +60,8 @@
 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  // Initialize Analytics
+  firebase.analytics();
 </script>
 
   <script src="main.dart.js" type="application/javascript"></script>
